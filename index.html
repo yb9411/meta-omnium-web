@@ -40,9 +40,9 @@
 						<p>A Benchmark for General-Purpose Learning-to-Learn<br />
 							<ul class="actions special icons">
 						<li>
-							<!-- placeholder arxiv paper: https://github.com/edi-meta-learning/meta-omnium -->
-							<li><a href="https://github.com/edi-meta-learning/meta-omnium" class="button icon regular fa-file-alt">Paper</a>
+							<li><a href="https://arxiv.org/" class="button icon regular fa-file-alt">Paper</a>
 								<a href="https://github.com/edi-meta-learning/meta-omnium" class="button icon brands fa-github">Code</a>
+								<a href="https://drive.google.com/drive/folders/1NKb0uLJqmAauE9FY18T-qQ-T6k5LA_yt?usp=sharing" class="button icon fa-images">Dataset</a>
 							</li>
 						</ul>
 
@@ -56,7 +56,6 @@
 							<li><a href="#dataset">Dataset</a></li>
 							<li><a href="#code">Code</a></li>
 							<li><a href="#citation">Citation</a></li>
-<!--							<li><a href="#result">Result</a></li>-->
 						</ul>
 					</nav>
 
@@ -74,20 +73,6 @@
 										<p class="content">Meta Omnium has a clear hyper-parameter tuning (HPO) and model selection protocol, to facilitate future fair comparison across current and future few-shot learning algorithms.
 										The benchmark already includes multi-task extensions of the most popular few-shot learning approaches and analyzes their ability to generalize across tasks and to transfer knowledge between them.</p>
 										<p class="content">We invite researchers to use our benchmark and study how to improve the ability of machine learning models to do general-purpose few-shot learning.</p>
-										<!--										<p> Meta Omnium is a meta-dataset created for few-shot learning research spanning multiple vision tasks from different domains including <b>recognition, semantic segmentation, keypoint localization/pose estimation, and regression</b>. Meta Omnium consists of 20 datasets covering multiple visual domains(from natural to medical and industrial images).-->
-<!--											<br>We provide experiments with popular few-shot meta-learning baselines and analyze their ability to generalize across tasks.-->
-<!--											<br>The aim of Meta Omnium is to advance the filed by encouraging the development of meta-learning algorithms capable of knowledge transfer across different tasks (meta multi-task learning).-->
-
-<!--										</p>-->
-										<!-- <p>Meta Omnium aims to build a benchmark for <b>multi-task meta-learning</b> that enables meta-learning researchers to evaluate model generalization to a much wider array of tasks than previously possible.
-
-											<br>We provide a <b>dataset of datasets</b> spanning multiple vision tasks including <b>recognition, keypoint localization, semantic segmentation and regression</b>. We also experiment it with popular few-shot meta-learning baselines and analyze their ability to generalize across tasks and to transfer knowledge between them.
-
-											<br>Meta Omnium has a clear <b>hyper-parameter tuning (HPO)</b> and model selection protocol, to facilitate future fair comparison across current and future meta-learning algorithms.
-
-<br>For more details, please refer to the paper and github repository.
-										</p> -->
-
 									</div>
 									<span class="image"><img src="images/figure1.jpg" alt="" /></span>
 								</div>
@@ -99,7 +84,6 @@
 								<header class="major">
 									<h2>Dataset</h2>
 									<p>Meta Omnium is lightweight yet includes images from many different domains and task types</p>
-									<!-- <p>Meta Omnium includes a diversity of data from different image domians and tasks with a small storage size. </p> -->
 								</header>
 								<ul class="statistics">
 									<li class="style1">
@@ -111,15 +95,10 @@
 										<strong>21</strong> Domains
 
 									</li>
-									<!-- could also use fa-bars -->
 									<li class="style3">
 										<span class="icon solid fa-tasks"></span> 
 										<strong>3+1</strong> Seen and Unseen Tasks
 									</li>
-									<!-- <li class="style4">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>2 to 706</strong> Categories
-									</li> -->
 									<li class="style4">
 										<span class="icon solid fa-save"></span>
 										<strong>3.1GB</strong> Storage
@@ -129,13 +108,11 @@
 									Meta Omnium includes over <b>160,000 images</b> images from <b>21 public datasets</b>, representing <b>3 seen tasks</b>: recognition, keypoint localization, semantic segmentation, and <b>1 unseen task</b>: regression.
 									<br>We have preprocessed the datasets and split them into: <b>meta-training</b>; <b>in-domain</b> and <b>out-of-domain meta-validation</b>; <b>in-domain, out-of-domain</b> and <b>out-of-task meta-testing</b> sets.
 								</p>
-								<!-- <p class="content">Meta Omnium includes over 160,000 images intotal from 21 public datasets among 4 tasks: recognition, keypoint localization, semantic segmentation and regression.  We provide preprocessed datasets to facilitate further research. We split the dataset into the following roles:
-Meta-train, In-domain(ID) Meta-val,Out-of-domain(OD) Meta-val, In-domain(ID) Meta-test,Out-of-domain(OD) Meta-test,Out-of-task(OOT). This benchmark consists of 3 main tasks (classification, segmentation keypoint) and 1 held-out task (regression) :
-<br>For more information, please refer to the paper and github repository. </p> -->
 
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="https://github.com/edi-meta-learning/meta-omnium" class="button primary">Learn More</a></li>
+										<li><a href="https://arxiv.org/" class="button primary">Learn More</a>
+										<a href="https://drive.google.com/drive/folders/1NKb0uLJqmAauE9FY18T-qQ-T6k5LA_yt?usp=sharing" class="button primary">Download Data</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -148,15 +125,6 @@ Meta-train, In-domain(ID) Meta-val,Out-of-domain(OD) Meta-val, In-domain(ID) Met
 										Our code makes it simple to use the benchmark, run experiments and add new approaches
 									</p>
 									
-									<!-- <p>We provide the hands-on code and instructions in our github repository.  You can run with our preprocessed data. We also provide the dataset convert scripts if you want to convert the original datasets yourself.
-
-										We support  the following few shot meta-learning algorithms: <b>MAML, Deep differentiable ridge-regression (DDRR),Prototypical Network, Meta-Curvature,Superviesed training with finetune, Train-from-Sractch (TFS)</b>
-
-As part of the benchmark, we include code for <b>hyper-patameter tuning(HPO)</b> to select appropriate hyperparameters for the diverse tasks.
-
-Visit our GitHub repository for more details.
-
-</p> -->
 								</header>
 								<p align="justify">
 									We provide all details and instructions needed to run experiments using Meta Omnium, including a link to <b>download</b> the preprocessed <b>data</b>. 
@@ -185,103 +153,10 @@ Visit our GitHub repository for more details.
 	booktitle={CVPR},
 	year = {2023}
 }</code></pre>
-			   <!-- <pre class="citation_content">
-@inproceedings{meta-omnium-2023,
-	title={Meta Omnium: A Benchmark for General-Purpose Learning-to-Learn},
-	author={Ondrej Bohdal,Yinbing Tian,Yongshuo Zong,Ruchika Chavhan,Da Li,Henry Gouk,Li Guo,Timothy Hospedale},
-	booktitle={CVPR},
-	url = {https://github.com/edi-meta-learning/meta-omnium},
-	year = {2023}
-	}
-			   </pre> -->
-
-		<!-- </div> -->
 		</div>
 
 
     </section><!-- End Citation Section -->
-
-<!-- First Section -->
-<!--							<section id="gallery" class="main special">-->
-<!--								<header class="major">-->
-<!--									<h2>Gallery</h2>-->
-<!--								</header>-->
-
-<!--										<span class="image center">-->
-<!--											<image src="images/gallery.jpg" width="100%" height="100%"/>-->
-<!--										</span>-->
-
-<!--								<footer class="major">-->
-<!--									<ul class="actions special">-->
-<!--										<li><a href="https://drive.google.com/drive/folders/1NKb0uLJqmAauE9FY18T-qQ-T6k5LA_yt" class="button primary">Find More</a></li>-->
-<!--									</ul>-->
-<!--								</footer>-->
-<!--							</section>-->
-<!--				<section id="result" class="main special">-->
-<!--								<header class="major">-->
-<!--									<h2>Result</h2>-->
-<!--								</header>-->
-<!--<div class="limiter">-->
-<!--<div class="container-table100">-->
-<!--<div class="wrap-table100">-->
-<!--<div class="table100">-->
-<!--<table>-->
-<!--<thead>-->
-<!--<tr class="table100-head">-->
-<!--<th class="column1">Method</th>-->
-<!--<th class="column2">Classification(ID/OOD)</th>-->
-<!--<th class="column3">Segmentation(ID/OOD)</th>-->
-<!--<th class="column4">Keypoint(ID/OOD)</th>-->
-<!--<th class="column5">Average Rank(ID/OOD/AVG)</th>-->
-<!--</tr>-->
-<!--</thead>-->
-<!--<tbody>-->
-<!--<tr>-->
-<!--<td class="column1">MAML</td>-->
-<!--<td class="column2">58.7/61.6</td>-->
-<!--<td class="column3">54.7/42.1</td>-->
-<!--<td class="column4">25.4/33.0</td>-->
-<!--<td class="column5">4.3/3.3/3.8</td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<td class="column1">Proto-MAML</td>-->
-<!--<td class="column2">50.5/49.7</td>-->
-<!--<td class="column3">46.4/44.1</td>-->
-<!--<td class="column4">23.6/22.5</td>-->
-<!--<td class="column5">6.0/6.3/3.2</td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<td class="column1">Meta-Curvature</td>-->
-<!--<td class="column2">64.8/61.4</td>-->
-<!--<td class="column3">65.6/49.8</td>-->
-<!--<td class="column4">43.5/16.0</td>-->
-<!--<td class="column5">2.0/4.3/3.2</td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<td class="column1">ProtoNet</td>-->
-<!--<td class="column2">70.4/59.4</td>-->
-<!--<td class="column3">75.8/57.2</td>-->
-<!--<td class="column4">27.8/33.3</td>-->
-<!--<td class="column5">1.3/1.7/1.5</td>-->
-<!--</tr>-->
-<!--<tr>-->
-<!--<td class="column1">DDRR</td>-->
-<!--<td class="column2">63.1/58.7</td>-->
-<!--<td class="column3">66.7/48.0</td>-->
-<!--<td class="column4">20.5/31.9</td>-->
-<!--<td class="column5">4.7/3.7/4.2</td>-->
-<!--</tr>-->
-
-<!--</tbody>-->
-<!--</table>-->
-<!--	</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
-
-
-<!--							</section>-->
 
 					</div>
 
@@ -291,12 +166,11 @@ Visit our GitHub repository for more details.
 						<section>
 							<h2>Contact</h2>
 							<dl class="alt">
-								<dt>Email</dt>
-								<dd>ondrej.bohdal@ed.ac.uk</dd>
+								<dt>GitHub</dt>
+								<dd><a href="https://github.com/edi-meta-learning/meta-omnium/issues">Ask via GitHub issues</a></dd>
 							</dl>
-							<!-- add other email addresses? -->
 						</section>
-						<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
+						<p class="copyright">Design: <a href="https://html5up.net">HTML5 UP</a></p>
 					</footer>
 
 			</div>
